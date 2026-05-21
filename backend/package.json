@@ -1,0 +1,23 @@
+{
+  "name": "git-diff-visualizer-backend",
+  "version": "0.1.0",
+  "description": "Express API server for git-diff-visualizer",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fs-extra": "^11.2.0",
+    "pino": "^8.19.0",
+    "pino-pretty": "^11.0.0",
+    "simple-git": "^3.22.0"
+  }
+}

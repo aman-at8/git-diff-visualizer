@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build output
+frontend/dist/
+
+# Environment variables — copy .env.example and fill in values
+.env
+backend/.env
+
+# Runtime repo cache — cloned repos are stored here, safe to delete to force re-clone
+.gdv-cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
