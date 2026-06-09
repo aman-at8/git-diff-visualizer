@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import pinoHttp from 'pino-http';
 import logger from './lib/logger.js';
+import reposRouter from './routes/repos.js';
 
 const PORT = Number(process.env.PORT) || 3001;
 const CORS_ORIGIN = process.env.CORS_ORIGIN || 'http://localhost:3000';
@@ -20,6 +21,8 @@ app.use(express.json());
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
+
+app.use('/api/repos', reposRouter);
 
 // ── Error handlers ────────────────────────────────────────────────────────────
 
