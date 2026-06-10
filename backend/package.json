@@ -10,7 +10,13 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node --watch --env-file-if-exists=.env src/index.js"
+    "dev": "node --watch --env-file-if-exists=.env src/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0",
+    "vitest": "^2.0.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
